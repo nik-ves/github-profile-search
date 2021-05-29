@@ -1,1 +1,75 @@
-/* CSS */
+:root {
+  --primary-color: #2b2b2b;
+  --secondary-color: #1a1e22;
+  --font-color-1: #fff;
+  --font-color-2: #000;
+  --button-color: #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  border-radius: 0;
+  font-family: "Courier New", monospace; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%; }
+
+.container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  padding: 2rem;
+  margin: 0 auto; }
+
+ul, ol {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  background-color: var(--button-color);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.text-info {
+  font-size: 1.5rem;
+  color: var(--font-color-1);
+  margin-top: 2rem;
+  line-height: 2rem; }
+  .text-info__link {
+    text-decoration: none;
+    color: var(--font-color-1);
+    border-bottom: 1px solid var(--font-color-1); }
+
+.nav {
+  text-align: center; }
+  .nav__links {
+    display: flex;
+    justify-content: space-between; }
+  .nav__logout {
+    display: flex;
+    color: var(--font-color-1);
+    font-size: 2rem;
+    border: none;
+    text-decoration: none;
+    justify-content: flex-end; }
+
+.github-search__icon {
+  color: var(--font-color-1);
+  font-size: 10rem;
+  margin-bottom: 1rem; }
+
+.github-search__input {
+  max-width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.5rem 4rem;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; }

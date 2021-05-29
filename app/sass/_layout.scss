@@ -1,0 +1,37 @@
+// ----- NAV -----
+.nav {
+    text-align: center;
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logout {
+        display: flex;
+        color: var(--font-color-1);
+        font-size: 2rem;
+        border: none;
+        text-decoration: none;
+        justify-content: flex-end;
+    }
+}
+
+// ----- GITHUB PROFILE SEARCH -----
+.github-search {
+
+    &__icon {
+        color: var(--font-color-1);
+        font-size: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        max-width: 100%;
+        border: none;
+        outline: none;
+        padding: 1.5rem 4rem;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}
