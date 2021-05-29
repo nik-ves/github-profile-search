@@ -6,6 +6,13 @@
     --button-color: #fff;
 }
 
+[data-theme="dark"] {
+    --primary-color: #e9ecef;
+    --secondary-color: #f8f9fa;
+    --font-color-1: #000;
+    --font-color-2: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
