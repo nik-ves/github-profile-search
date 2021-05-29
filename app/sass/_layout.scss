@@ -72,10 +72,6 @@
         }
     }
 
-    // .menu li:not(:last-child) {
-    //     border-right: 1px dotted #ccc;
-    // }
-
     &__followers {
         display: flex;
         justify-content: center;
@@ -85,4 +81,59 @@
             padding: 0 2rem;
         }
     } 
+}
+
+// ----- GITHUB REPOSITORIES -----
+.github-repositories {
+    max-width: 140rem;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    &__row {
+        margin: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__card {
+        background-color: var(--font-color-1);
+        width: 30rem;
+        border-radius: 5px;
+        padding: 1rem;
+        height: 15rem;
+        margin-bottom: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &--name {
+            color: var(--font-color-2);
+            text-transform: uppercase;
+        }
+
+        &--description {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            overflow: hidden;
+            color: var(--font-color-2);
+        }
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: var(--font-color-2);
+    }
+
+    &__list {
+
+        &--item {
+            display: inline-block;
+            padding: 0 2.5rem 0 0;
+            font-size: 1.5rem;
+            color: var(--font-color-2);
+        }
+    }
 }

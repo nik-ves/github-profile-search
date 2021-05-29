@@ -36,6 +36,38 @@ btn.addEventListener('click', (name) => {
     document.querySelector('.github-profile').innerHTML = profile;
   })
 
+  // REPOSITORIES
+  fetch(ghRepositories).then((responseRepository) => {
+    return responseRepository.json();
+  }).then((repositoryData) => {
+
+    var repository = '';
+    repositoryData.forEach((element) => {
+
+      if (element.description === null) {
+        element.description = '';
+      }
+
+      repository += 
+      `
+      <a href="${element.html_url}" target="_blank" id="github-link">
+        <div class="github-repositories__card">
+
+          <h4 class="github-repositories__card--name heading-4">${element.name}</h4>
+              
+          <p class="github-repositories__card--description">${element.description}</p>
+
+          <ul class="github-repositories__list">
+            <li class="github-repositories__list--item"><i class="fas fa-star github-repositories__icon"></i> ${element.stargazers_count}</li>
+            <li class="github-repositories__list--item"><i class="fas fa-code-branch github-repositories__icon"></i> ${element.forks_count}</li>
+            <li class="github-repositories__list--item"><i class="fas fa-eye github-repositories__icon"></i> ${element.watchers_count}</li>
+          </ul>
+        </div>
+      </a>
+      `
+      document.querySelector('.github-repositories__row').innerHTML = repository;
+    })
+  })
+
   document.querySelector('.github-content').style.display = 'none';
 })
-
