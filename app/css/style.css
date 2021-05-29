@@ -73,3 +73,34 @@ a {
   padding: 1.5rem 4rem;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px; }
+
+.github-profile {
+  text-align: center;
+  color: var(--font-color-1); }
+  .github-profile__image {
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 100px;
+    background-color: var(--font-color-1); }
+  .github-profile__name {
+    margin: 10px 0 0 0;
+    margin-bottom: 0.5rem; }
+  .github-profile__user-name {
+    color: var(--font-color-1);
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 2rem; }
+  .github-profile__social-links {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem; }
+    .github-profile__social-links--item {
+      display: inline-block;
+      padding: 0 3rem; }
+  .github-profile__followers {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem; }
+    .github-profile__followers--item {
+      padding: 0 2rem; }

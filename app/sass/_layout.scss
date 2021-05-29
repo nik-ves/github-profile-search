@@ -35,3 +35,54 @@
         border-top-left-radius: 5px;
     }
 }
+
+// ----- GITHUB USER PROFILE -----
+.github-profile {
+    text-align: center;
+    color: var(--font-color-1);
+
+    &__image {
+        width: 15rem;
+        padding: 1rem;
+        border-radius: 100px;
+        background-color: var(--font-color-1);
+    }
+
+    &__name {
+        margin: 10px 0 0 0;
+        margin-bottom: 0.5rem;
+    }
+
+    &__user-name {
+        color: var(--font-color-1);
+        font-weight: 400;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+
+        &--item {
+            display: inline-block;
+            padding: 0 3rem;
+        }
+    }
+
+    // .menu li:not(:last-child) {
+    //     border-right: 1px dotted #ccc;
+    // }
+
+    &__followers {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+
+        &--item {
+            padding: 0 2rem;
+        }
+    } 
+}
