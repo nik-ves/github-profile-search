@@ -21,17 +21,19 @@ btn.addEventListener('click', (name) => {
 
     <p class="github-profile__user-name">${profileData.login}</p>
 
-    <ul class="github-profile__social-links">
-      <li class="github-profile__social-links--item"><i class="fas fa-building"></i> ${profileData.company}</li>
-      <li class="github-profile__social-links--item"><i class="fas fa-globe-europe"></i> ${profileData.location}</li>
-      <li class="github-profile__social-links--item"><i class="fab fa-twitter"></i> ${profileData.twitter_username}</li>
-    </ul>
+    <div class="github-profile__info">
+        <ul class="github-profile__social-links">
+            <li class="github-profile__social-links--item"><i class="fas fa-building"></i> ${profileData.company}</li>
+            <li class="github-profile__social-links--item"><i class="fas fa-globe-europe"></i> ${profileData.location}</li>
+            <li class="github-profile__social-links--item"><i class="fab fa-twitter"></i> ${profileData.twitter_username}</li>
+        </ul>
 
-    <ul class="github-profile__followers">
-      <li class="github-profile__followers--item">Followers: <span>${profileData.followers}</span></li>
-      <li class="github-profile__followers--item">Following: <span>${profileData.following}</span></li>
-      <li class="github-profile__followers--item">Repositories: <span>${profileData.public_repos}</span>&nbsp;</li>
-    </ul>
+        <ul class="github-profile__followers">
+            <li class="github-profile__followers--item">Followers: <span>${profileData.followers}</span></li>
+            <li class="github-profile__followers--item">Following: <span>${profileData.following}</span></li>
+            <li class="github-profile__followers--item">Repositories: <span>${profileData.public_repos}</span>&nbsp;</li>
+        </ul>
+    </div>
     `
     document.querySelector('.github-profile').innerHTML = profile;
   })

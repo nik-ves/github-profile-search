@@ -11,6 +11,10 @@
 .heading-1 {
     font-weight: 700;
     font-size: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 2em;
+    }
 }
 
 .heading-4 {
@@ -23,6 +27,10 @@
     color: var(--font-color-1);
     margin-top: 2rem;
     line-height: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.2em;
+    }
 
     &__link {
         text-decoration: none;

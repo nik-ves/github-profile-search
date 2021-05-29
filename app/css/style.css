@@ -47,6 +47,9 @@ a {
 .heading-1 {
   font-weight: 700;
   font-size: 3rem; }
+  @media only screen and (max-width: 31.5em) {
+    .heading-1 {
+      font-size: 2em; } }
 
 .heading-4 {
   font-weight: 700;
@@ -57,6 +60,9 @@ a {
   color: var(--font-color-1);
   margin-top: 2rem;
   line-height: 2rem; }
+  @media only screen and (max-width: 31.5em) {
+    .text-info {
+      font-size: 1.2em; } }
   .text-info__link {
     text-decoration: none;
     color: var(--font-color-1);
@@ -87,6 +93,9 @@ a {
   padding: 1.5rem 4rem;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px; }
+  @media only screen and (max-width: 31.5em) {
+    .github-search__input {
+      max-width: 70%; } }
 
 .github-profile {
   text-align: center;
@@ -109,15 +118,39 @@ a {
     justify-content: center;
     font-size: 2rem;
     margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 31.5em) {
+      .github-profile__social-links {
+        flex-direction: column;
+        margin-bottom: 0;
+        font-size: 1.3em; }
+        .github-profile__social-links li:not(:last-child) {
+          margin-bottom: 0.5em; } }
     .github-profile__social-links--item {
       display: inline-block;
       padding: 0 3rem; }
+      @media only screen and (max-width: 31.5em) {
+        .github-profile__social-links--item {
+          padding: 0; } }
   .github-profile__followers {
     display: flex;
     justify-content: center;
     font-size: 2rem; }
+    @media only screen and (max-width: 31.5em) {
+      .github-profile__followers {
+        flex-direction: column;
+        font-size: 1.3em; }
+        .github-profile__followers li:not(:last-child) {
+          margin-bottom: 0.5em; } }
     .github-profile__followers--item {
       padding: 0 2rem; }
+      @media only screen and (max-width: 31.5em) {
+        .github-profile__followers--item {
+          padding: 0; } }
+  @media only screen and (max-width: 31.5em) {
+    .github-profile__info {
+      display: flex;
+      justify-content: space-around;
+      text-align: left; } }
 
 .github-repositories {
   max-width: 140rem;
